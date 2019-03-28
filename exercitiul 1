@@ -1,0 +1,41 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+void maxim()
+{
+ int n,i,x,maxx;
+    printf("Tastati numarul de elemente n= : ");
+    scanf("%d",&n);
+    printf("Tastati elementele :");
+    scanf("%d",&maxx);
+    for(i=1;i<n; i++){
+        scanf("%d",&x);
+        if(x>maxx)
+            maxx =x;
+    }
+    printf("Maximul este: %d",maxx);
+
+}
+void prime()
+{
+    int main()
+{
+    int i,n,
+}
+}
+int main()
+{
+    char comanda;
+    do{
+    printf("<A/a> -> valoare maxima\n");
+    printf("<P/p -> numere prime\n")
+    printf("Tastati comanda:");
+    scanf("%c", &comanda);
+    switch(comanda)
+    {
+    case 'A':
+    case 'a': maxim();break;
+    }
+    }
+    while(comanda == 0);
