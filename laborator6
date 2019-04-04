@@ -1,0 +1,31 @@
+int cnvB(int n, int b)
+{
+    int noulnr=0;
+    int p=1,r;
+    int copn=n;
+    while (copn!=0)
+    {
+        r= copn%b;
+        noulnr=noulnr+r*p;
+        p=p*10;
+        copn=copn/b;
+
+    }
+    return noulnr;
+}
+
+int main()
+{
+    int vector[10];
+    int p;
+    int q,n,b,nb;
+    printf("Tastati un numar in baza 10:\n");
+    scanf("%d",&n);
+    printf("Introduceti baza p:\n");
+    scanf("%d",&b);
+    printf("Introduceti baza q:\n");
+    scanf("%d",&nb);
+    p=cnvB(n,b);
+    printf("%d",p);
+    q=cnvB(n,nb);
+    printf("%d",q);
